@@ -1,0 +1,108 @@
+body {
+    font-family: "Myriad Pro Light", sans-serif;
+    font-size: 0.8rem;
+}
+
+.wrap{
+    width: 90%;
+    margin: auto;
+}
+
+table {
+    margin: auto;
+    background-color: #71dd8a;
+}
+
+tr:nth-child(odd) {
+    background-color: #b4ddb0;
+}
+
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+th {
+    height: 50px;
+    width: 70px;
+    background-color: black;
+}
+
+th:last-of-type {
+    height: 50px;
+    width: 400px;
+}
+
+td {
+    padding: 10px 20px;
+}
+
+td:first-of-type {
+    font-weight: bold;
+}
+
+.opened{
+    background-color: #71dd8a;
+}
+
+.opened:hover{
+    background-color: #41dd63;
+}
+
+.closed{
+    background-color: #f1b0b7;
+}
+
+.closed:hover{
+    background-color: #f18f91;
+}
+
+table a {
+    text-decoration: none;
+    color: black;
+}
+
+table a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+a {
+    display: block;
+    color: black;
+    margin: 10px 0;
+    padding: 5px 10px;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #3b5998;
+}
+
+.pageNav {
+    display: flex;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.tri a {
+    display: block;
+    padding: 5px 5px;
+}
+
+.tri {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}

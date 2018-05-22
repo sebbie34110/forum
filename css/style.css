@@ -1,0 +1,111 @@
+body {
+    font-family: "Myriad Pro Light", sans-serif;
+    font-size: 0.8rem;
+    padding: 0;
+    margin: 0;
+}
+
+.wrap{
+    width: 90%;
+    margin: auto;
+}
+
+table {
+    margin: auto;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+    text-align: center;
+}
+
+thead {
+    background-color: black;
+    color: white;
+}
+
+th {
+    height: 50px;
+    width: 200px;
+}
+
+td {
+    padding: 10px 20px;
+}
+
+.opened{
+    background-color: #71dd8a;
+}
+
+.opened:hover{
+    background-color: #41dd63;
+}
+
+.closed{
+    background-color: #f1b0b7;
+}
+
+.closed:hover{
+    background-color: #f18f91;
+}
+
+table a {
+    text-decoration: none;
+    color: black;
+}
+
+table a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* LOGIN SECTION*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+    color: white;
+    margin-bottom: 20px;
+}
+
+header a {
+    display: block;
+    color: white;
+    padding-left: 10px;
+}
+
+.login {
+    display: flex;
+    align-items: baseline;
+}
+
+.logout a {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+input {
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-left: 5px;
+    border: none;
+}
+
+input:first-child {
+
+    margin-left: 15px;
+}
+
+input:last-child {
+    background-color: #007bff;
+    color: white;
+}
