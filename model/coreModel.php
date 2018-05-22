@@ -1,12 +1,15 @@
-<?php
-declare(strict_types=1);
+<?php declare(strict_types=1);
+
+namespace forum\model;
+
+use PDO, PDOStatement, Exception;
 
 /**
  * Gestion de l'instance de PDO
  *
- * Class PDOManager
+ * Class coreModel
  */
-class PDOManager
+class coreModel
 {
     protected $pdo;
     private static $instance;
@@ -21,12 +24,11 @@ class PDOManager
 
     /**
      * Singleton pour récuperer l'instance de ma propre classe
-     *
-     * @return DBManager
+     * @return coreModel
      */
-    public static function getInstance(): DBManager {
+    public static function getInstance(): coreModel {
         if(self::$instance == null) {
-            self::$instance = new DBManager();
+            self::$instance = new coreModel();
         }
 
         return self::$instance;

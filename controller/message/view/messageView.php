@@ -1,10 +1,5 @@
-<?php
-declare(strict_types=1);
-require 'config.php';
-require 'class/Autoloader.php';
-Autoloader::register();
+<?php declare(strict_types=1);
 
-$messageList = '';
 
 if (!empty($_GET)){
 
@@ -62,30 +57,19 @@ if (!empty($_GET)){
 
 ?>
 
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/messageStyle.css">
-    <title>Document</title>
-</head>
-<body>
 <div class="wrap">
     <div class="links">
-        <a href="index.php">Retour aux conversations</a>
+        <a href="../../../index.php">Retour aux conversations</a>
         <div class="tri">
             <p>Trier par: </p>
-            <a href="messagePage.php?c_id=<?=$conversationId?>&m_count=<?=$messageCount?>&page=<?=$page?>&tri=date">Date</a>
-            <a href="messagePage.php?c_id=<?=$conversationId?>&m_count=<?=$messageCount?>&page=<?=$page?>&tri=id">Id</a>
-            <a href="messagePage.php?c_id=<?=$conversationId?>&m_count=<?=$messageCount?>&page=<?=$page?>&tri=auteur">Auteur</a>
+            <a href="messageView.php?c_id=<?=$conversationId?>&m_count=<?=$messageCount?>&page=<?=$page?>&tri=date">Date</a>
+            <a href="messageView.php?c_id=<?=$conversationId?>&m_count=<?=$messageCount?>&page=<?=$page?>&tri=id">Id</a>
+            <a href="messageView.php?c_id=<?=$conversationId?>&m_count=<?=$messageCount?>&page=<?=$page?>&tri=auteur">Auteur</a>
         </div>
         <div class="pageNav">
-            <a href="messagePage.php?c_id=<?=$conversationId?>&m_count=<?=$messageCount?>&page=<?=$page-1?>"><?= ($page == 1) ? '' : '&lt;Page précedente'?></a>
+            <a href="messageView.php?c_id=<?=$conversationId?>&m_count=<?=$messageCount?>&page=<?=$page-1?>"><?= ($page == 1) ? '' : '&lt;Page précedente'?></a>
             <a href=""><?=$page.'/'.$nbrPages?></a>
-            <a href="messagePage.php?c_id=<?=$conversationId?>&m_count=<?=$messageCount?>&page=<?=$page+1?>"><?= ($page == $nbrPages) ? 'Fin' : 'Page suivante&gt;'?></a>
+            <a href="messageView.php?c_id=<?=$conversationId?>&m_count=<?=$messageCount?>&page=<?=$page+1?>"><?= ($page == $nbrPages) ? 'Fin' : 'Page suivante&gt;'?></a>
         </div>
     </div>
 
@@ -112,9 +96,4 @@ if (!empty($_GET)){
             </tbody>
         </table>
     <?php endif; ?>
-
-
-
 </div>
-</body>
-</html>

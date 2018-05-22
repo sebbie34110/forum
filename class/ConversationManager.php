@@ -13,7 +13,7 @@ class ConversationManager extends DBManager
      * @return array
      */
     public function getList() : array {
-        $pdo = DBManager::getInstance(); // Appel de getInstance() qui va créer un new PDOManager
+        $pdo = DBManager::getInstance(); // Appel de getInstance() qui va créer un new coreModel
 
         // Appel de makeSelect() qui va appeler makeStatement() (qui va faire le ->query et/ou le ->prepare et le ->execute
         // Ensuite makeSelect récupère le statement et fait le ->fetchAll

@@ -1,10 +1,11 @@
-<?php
+<?php declare(strict_types=1);
 /**
  * Created by PhpStorm.
  * User: webuser1801
- * Date: 10/04/2018
- * Time: 09:13
+ * Date: 22/05/2018
+ * Time: 12:06
  */
+namespace forum\model\entities;
 
 class User
 {
@@ -44,14 +45,14 @@ class User
         }
     }
 
-/*
- *
- *
- *    SETTERS
- *
- *
- *
- */
+    /*
+     *
+     *
+     *    SETTERS
+     *
+     *
+     *
+     */
 
     /**
      * @param mixed $id
@@ -119,14 +120,14 @@ class User
 
 
 
-/*
- *
- *
- *    GETTERS
- *
- *
- *
- */
+    /*
+     *
+     *
+     *    GETTERS
+     *
+     *
+     *
+     */
 
     /**
      * @return mixed
